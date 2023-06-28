@@ -1,4 +1,5 @@
 package exerc2Test;
+
 import exerc2.Extremos;
 import exerc2.Utilitario;
 import org.junit.jupiter.api.Assertions;
@@ -35,9 +36,7 @@ public class UtilitarioTest {
         Utilitario utilitario = new Utilitario();
         int[] vetor = {};
 
-        Assertions.assertThrows(Exception.class, () -> {
-            utilitario.acharExtremos(vetor);
-        });
+        Assertions.assertThrows(Exception.class, () -> {utilitario.acharExtremos(vetor);});
     }
 
     @Test
