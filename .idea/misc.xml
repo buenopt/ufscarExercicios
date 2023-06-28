@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/atividade3_junit/pom.xml" />
         <option value="$PROJECT_DIR$/atividade4_mocking/pom.xml" />
+        <option value="$PROJECT_DIR$/atividade7_caixaBranca/pom.xml" />
+        <option value="$PROJECT_DIR$/atividade8_testeMutacao/pom.xml" />
       </list>
     </option>
   </component>

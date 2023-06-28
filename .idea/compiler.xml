@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="atividade8_testeMutacao" />
         <module name="atividade3_junit" />
         <module name="atividade4_mocking" />
+        <module name="atividade7_caixaBranca" />
       </profile>
     </annotationProcessing>
   </component>
