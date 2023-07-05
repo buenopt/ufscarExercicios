@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="atividade9_cxpreta_pce_avl" />
         <module name="atividade8_testeMutacao" />
         <module name="atividade3_junit" />
         <module name="atividade4_mocking" />
