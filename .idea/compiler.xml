@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="atividade9_cxpreta_pce_avl" />
         <module name="atividade9_cxpreta_td" />
-        <module name="atividade8_testeMutacao" />
+        <module name="atividade10_GUI" />
         <module name="atividade3_junit" />
-        <module name="atividade4_mocking" />
         <module name="atividade7_caixaBranca" />
+        <module name="atividade8_testeMutacao" />
+        <module name="atividade4_mocking" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,3 +1,5 @@
+package exerc1;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -5,29 +7,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.github.andreendo.petclinicpageobjects.HomePage;
-import com.github.andreendo.petclinicpageobjects.OwnersPage;
-import com.github.andreendo.petclinicpageobjects.OwnerDetailsPage;
-
 public class PetClinicTest {
 
     @Test
     public void testAddOwner() {
-        // Create a new WebDriver instance
+        // cria nova instancia webdrive
         WebDriver driver = new ChromeDriver();
 
-        // Go to the PetClinic home page
+        // inicia o petclinic
         driver.get("http://localhost:8080/petclinic/");
 
-        // Click on the "Owners" link
+        // clica no link "Owners"
         HomePage homepage = new HomePage(driver);
         homepage.clickOnOwnersLink();
 
-        // Click on the "Add Owner" link
+        // Clica no link "Add Owner"
         OwnersPage ownersPage = new OwnersPage(driver);
         ownersPage.clickOnAddOwnerLink();
 
-        // Fill out the owner form
+        // Preencha o formulário de proprietário
         OwnerDetailsPage ownerDetailsPage = new OwnerDetailsPage(driver);
         ownerDetailsPage.setFirstName("Fernando");
         ownerDetailsPage.setLastName("Bueno");
@@ -38,14 +36,14 @@ public class PetClinicTest {
         ownerDetailsPage.setPhoneNumber("1598765432");
         ownerDetailsPage.setEmailAddress("buenopt@hotmail.com");
 
-        // Click on the "Save" button
+        // Clique no botão "Save"
         ownerDetailsPage.clickOnSaveButton();
 
-        // Verify that the owner was added successfully
+        // Verifique se o proprietário foi adicionado com sucesso
         WebElement successMessage = driver.findElement(By.cssSelector(".alert.alert-success"));
         Assertions.assertEquals("Owner added successfully", successMessage.getText());
 
-        // Close the WebDriver instance
+        // Feche a instância do WebDriver
         driver.quit();
     }
 }
