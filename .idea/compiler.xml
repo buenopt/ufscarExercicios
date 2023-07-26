@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="atividade9_cxpreta_pce_avl" />
         <module name="atividade9_cxpreta_td" />
+        <module name="atividade11" />
         <module name="atividade10_GUI" />
         <module name="atividade3_junit" />
         <module name="atividade7_caixaBranca" />
